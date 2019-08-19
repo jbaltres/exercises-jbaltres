@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      *,
+      *:after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /* display, flex-direction */
+      }
+
+      .content {
+        overflow: auto;
+        display: flex;
+
+        /* display, flex-wrap, align-items, flex-grow */
+        flex-wrap: wrap;
+        flex-grow: 1;
+        overflow: auto;
+      }
+
+      .content > main {
+        /* flex-grow, min-width */
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .content > aside {
+        width: 150px;
+        overflow: auto;
+        flex-wrap: wrap;
+      }
+
+      main,
+      aside {
+        padding: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        HEADER
+      </header>
+      <div class="content">
+        <main>
+          MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN
+          MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN
+          MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN
+          MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN
+        </main>
+        <aside>
+          ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE
+          ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE
+          ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE
+          ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE ASIDE
+          ASIDE
+        </aside>
+      </div>
+      <footer>FOOTER</footer>
+    </div>
+  </body>
+</html>
