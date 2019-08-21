@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<title>Example</title>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    #main {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+    }
+    #main > article {
+      display: flex
+      flex: 1;
+      background: rgb(255, 255, 255);
+      border-color: black;
+      color: black;
+      border: 1pt solid;
+      margin: 20px;
+      min-width: 400px;
+      max-width: 700px;
+
+    }
+    #main > aside {
+      background: rgb(250, 250, 249);
+      width: 250px;
+      overflow: auto;
+      flex-wrap: wrap;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+      padding: 1em;
+    }
+    header {
+      background: rgb(59, 176, 211);
+      height: 10vh;
+    }
+
+    footer {
+      background: rgb(28, 63, 73);
+      height: 10vh;
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    #box1 {
+      display: flex;
+      color: black;
+      background-color: rgb(205, 245, 255);
+      width: 100%;
+      height: 70px;
+      padding: 10px;
+      align-items: center;
+      margin-bottom: 15px;
+      overflow: auto;
+    }
+
+    #infobox {
+      border: 2pt solid;
+      border-color: black;
+      overflow: auto;
+      color: rgb(61, 0, 0);
+    }
+
+    button {
+      background-color: rgb(88, 160, 255);
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      border-radius: 40px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+  #box2 {
+    display:flex;
+    flex-wrap: wrap;
+    width: 30%;
+    flex-direction: row;
+    margin: 5px;
+    min-width: 300px;
+
+  }
+
+  .container{
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+</style>
+<body>
+  <header>
+    <img
+      src="https://plore.de/wp-content/uploads/2017/04/plore-logo-white-big-2.png"
+      alt=""
+    />
+  </header>
+  <div id="main">
+    <!-- Box mit der Überschrift -->
+    <div id="box1">
+      <h1>Glowing Rooms Köln</h1>
+    </div>
+    <div class="container2">
+    <div class="container">
+      <img
+        src="https://plore.de/wp-content/uploads/2019/05/GR-K-4-350x450.jpg"
+        alt=""
+        id="box2"
+      />
+      <img
+        src="https://plore.de/wp-content/uploads/2019/05/GR-K-4-350x450.jpg"
+        alt=""
+        id="box2"
+      />
+      
+      <img src="" alt="" />
+    </div>
+    <div class="container">
+    <article class="container">
+      Indoor-Schwarzlicht Minigolf ist der wetterunabhängige Freizeitspaß für
+      alle Altersklassen. Dabei erzielen die Glowing Rooms durch den Einsatz von
+      Schwarzlicht und speziellen Brillen außergewöhnliche Akzente. Alle Wände
+      und Böden der Räume wurden von renommierten bildenden Künstlern gestaltet.
+      Farbe und Licht beflügeln die Fantasie. Unterwasserwelt, Inka-Trail und
+      Weltall erstrahlen in leuchtend bunten Figuren und Formen. Die gesamte
+      Raumoptik erwacht zum Leben und führt Dich auf eine fantastische Reise. Ob
+      Familienausflug oder zum Start in den Abend – die Glowing Rooms bieten
+      Freizeitsport auf einem faszinierenden Spielfeld. 18 Bahnen unterteilt in
+      vier Spielwelten auf 400 m2 erwarten Dich für ein einzigartiges Erlebnis.
+      Nur 3 km vom Dom entfernt, stehen die Glowing Rooms mitten in
+      Köln-Ehrenfeld in perfekter Citylage. Eine unmittelbare Anbindung an S-
+      und U-Bahn sowie genügend Parkplätze sind selbstverständlich vorhanden.
+    </article>
+    <aside>
+      <div id="infobox">
+        <ul style="list-style: none;">
+          <li>Venloer Straße 383, Köln, Deutschland</li>
+          <p></p>
+          <li>https://www.glowingrooms.com/koeln/</li>
+          <p></p>
+          <li>€€</li>
+          <p></p>
+          <li>0190 - 66666</li>
+          <p></p>
+          <button>Kontaktieren Sie uns</button>
+        </ul>
+      </div>
+    </div>
+    </aside>
+  
+  </div>
+  </div>
+  <footer>
+      <img
+      src="https://plore.de/wp-content/uploads/2017/04/plore-logo-white-big-2.png"
+      alt=""
+    />
+  </footer>
+</body>
